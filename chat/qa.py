@@ -8,6 +8,7 @@ Available functions:
 - All classes and functions: 所有类和函数
 """
 import copy
+import os
 import json
 import sqlite3
 from collections import deque
@@ -20,7 +21,11 @@ from .word2pinyin import pinyin_cut, jaccard_pinyin
 
 log_do_not_know = getConfig("path", "do_not_know")
 
-
+def check_dir(file_dir):
+    dir= os.path.dirname(file_dir)
+    if os.path.isdir(dir) and  not os.path.exists(dir):
+        os.mkdir(dir)
+check_dir(log_do_not_know)
 # def get_navigation_location():
     # """获取导航地点 
     # """
