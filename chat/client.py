@@ -14,14 +14,14 @@ Available functions:
 
 import json
 import socket
-from .config import getConfig
+from chat.config import getConfig
 # from .mytools import time_me
 
-mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-host = getConfig("nluclient", "host")
-port = int(getConfig("nluclient", "port"))
-mysock.connect((host, port))
-
+def connect_server():
+    mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    host = getConfig("nluclient", "host")
+    port = int(getConfig("nluclient", "port"))
+    mysock.connect((host, port))
 def question_pack(info="", userid="A0001", key="A0001"):
     """Package the question as the JSON format specified by the server.
     将问题打包为服务器指定的json格式。

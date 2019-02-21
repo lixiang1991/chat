@@ -237,11 +237,11 @@ def time_me(info="used", format_string="ms"):
     def _time_me(func):
         @wraps(func)
         def _wrapper(*args, **kwargs):
-            start = time.clock()
+            start = time.process_time()
             # start = time.perf_counter()
             # start = time.process_time()
             result = func(*args, **kwargs)
-            end = time.clock()
+            end = time.process_time()
             if format_string == "s":
                 print("%s %s %s"%(func.__name__, info, end - start), "s")
             elif format_string == "ms":

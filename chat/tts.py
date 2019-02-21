@@ -11,8 +11,9 @@ Available functions:
 import os
 import uuid
 import requests
-import pygame.mixer as mixer
-import win32com.client
+def init_tts():
+    import pygame.mixer as mixer
+    import win32com.client
 
 
 class RequestError(Exception):

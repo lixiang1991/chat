@@ -74,7 +74,7 @@ Chat 的设计原则
    user/thanks
 
 API 目录
-----------
+--------------------------------------------------
 
 如果你正在寻找某个特殊的函数，类或者方法，这一列文档就是为你准备的。
 
@@ -86,7 +86,7 @@ API 目录
   modules/graph
   modules/sql
   modules/qa
-  modules/qa_aql
+  modules/qa_sql
   modules/kmapi
   modules/mytools
   modules/semantic

@@ -9,8 +9,8 @@ from collections import OrderedDict
 from chat.config import getConfig
 from py2neo import Graph, Node, Relationship, NodeSelector
 from tkinter.filedialog import askopenfilename
-from .mytools import read_excel, write_excel, set_excel_style
-from .semantic import get_tag
+from chat.mytools import read_excel, write_excel, set_excel_style
+from chat.semantic import get_tag
 
 
 class Database():

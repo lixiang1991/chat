@@ -30,6 +30,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="chat 1.0.7 documentation" href="../index.html"/>
         <link rel="next" title="API - 语义工具箱" href="semantic.html"/>
         <link rel="prev" title="API - 语义知识库管理 API 接口" href="kmapi.html"/> 
@@ -162,7 +165,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/modules/mytools.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/modules/mytools.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -174,74 +177,79 @@
             
   <div class="section" id="api">
 <h1>API - 常用工具箱<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
-<a class="reference internal image-reference" href="../_images/mytools.ico"><img alt="../_images/mytools.ico" src="../_images/mytools.ico" style="width: 64.0px; height: 64.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/mytools.ico"><img alt="../_images/mytools.ico" src="../_images/mytools.ico" /></a>
+<span class="target" id="module-chat.mytools"></span><p>A collection of useful tools. 实用工具集合。</p>
+<p>Including batch processing, performance analysis, data analysis, etc..
+包含批处理，性能分析，数据分析等。</p>
+<p>Available functions:
+- All classes and functions: 所有类和函数</p>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#mytools.Error" title="mytools.Error"><code class="xref py py-obj docutils literal"><span class="pre">mytools.Error</span></code></a>(value)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#mytools.Error" title="mytools.Error"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.Error</span></code></a>(value)</td>
 <td>Base class for exceptions in this module.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#mytools.StringPatternError" title="mytools.StringPatternError"><code class="xref py py-obj docutils literal"><span class="pre">mytools.StringPatternError</span></code></a>(value)</td>
+<tr class="row-even"><td><a class="reference internal" href="#mytools.StringPatternError" title="mytools.StringPatternError"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.StringPatternError</span></code></a>(value)</td>
 <td>Exception raised for errors in the pattern of string args.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#mytools.MyEncoder" title="mytools.MyEncoder"><code class="xref py py-obj docutils literal"><span class="pre">mytools.MyEncoder</span></code></a>([skipkeys,&nbsp;ensure_ascii,&nbsp;...])</td>
-<td>解决json.dumps不能序列化datetime类型的问题：使用Python自带的json.dumps方法</td>
+<tr class="row-odd"><td><a class="reference internal" href="#mytools.MyEncoder" title="mytools.MyEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.MyEncoder</span></code></a>(*[,&nbsp;skipkeys,&nbsp;…])</td>
+<td>解决json.dumps不能序列化datetime类型的问题：使用Python自带的json.dumps方法 转换数据为json的时候，如果格式化的数据中有datetime类型的数据时会报错。 TypeError: datetime.datetime(2014, 03, 20, 12, 10, 44) is not JSON serializable Usage: json.dumps(data, cls=MyEncoder)</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#mytools.get_mac_address" title="mytools.get_mac_address"><code class="xref py py-obj docutils literal"><span class="pre">mytools.get_mac_address</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="#mytools.get_mac_address" title="mytools.get_mac_address"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.get_mac_address</span></code></a>()</td>
 <td>Get mac address.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#mytools.get_hostname" title="mytools.get_hostname"><code class="xref py py-obj docutils literal"><span class="pre">mytools.get_hostname</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="#mytools.get_hostname" title="mytools.get_hostname"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.get_hostname</span></code></a>()</td>
 <td>Get hostname.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#mytools.get_ip_address" title="mytools.get_ip_address"><code class="xref py py-obj docutils literal"><span class="pre">mytools.get_ip_address</span></code></a>(hostname)</td>
+<tr class="row-even"><td><a class="reference internal" href="#mytools.get_ip_address" title="mytools.get_ip_address"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.get_ip_address</span></code></a>(hostname)</td>
 <td>Get host ip address.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#mytools.get_host_ip" title="mytools.get_host_ip"><code class="xref py py-obj docutils literal"><span class="pre">mytools.get_host_ip</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="#mytools.get_host_ip" title="mytools.get_host_ip"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.get_host_ip</span></code></a>()</td>
 <td>Get host ip address.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#mytools.get_current_function_name" title="mytools.get_current_function_name"><code class="xref py py-obj docutils literal"><span class="pre">mytools.get_current_function_name</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="#mytools.get_current_function_name" title="mytools.get_current_function_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.get_current_function_name</span></code></a>()</td>
 <td>Get current function name.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#mytools.Walk" title="mytools.Walk"><code class="xref py py-obj docutils literal"><span class="pre">mytools.Walk</span></code></a>([db])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#mytools.Walk" title="mytools.Walk"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.Walk</span></code></a>([db])</td>
 <td>Walk directory to batch processing.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#mytools.time_me" title="mytools.time_me"><code class="xref py py-obj docutils literal"><span class="pre">mytools.time_me</span></code></a>([info,&nbsp;format_string])</td>
+<tr class="row-even"><td><a class="reference internal" href="#mytools.time_me" title="mytools.time_me"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.time_me</span></code></a>([info,&nbsp;format_string])</td>
 <td>Performance analysis - time</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#mytools.get_timestamp" title="mytools.get_timestamp"><code class="xref py py-obj docutils literal"><span class="pre">mytools.get_timestamp</span></code></a>([s,&nbsp;style,&nbsp;pattern])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#mytools.get_timestamp" title="mytools.get_timestamp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.get_timestamp</span></code></a>([s,&nbsp;style,&nbsp;pattern])</td>
 <td>Get timestamp.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">mytools.get_current_time</span></code>([format_string,&nbsp;info])</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.get_current_time</span></code>([format_string,&nbsp;info])</td>
 <td>Get current time with specific format_string.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#mytools.get_age" title="mytools.get_age"><code class="xref py py-obj docutils literal"><span class="pre">mytools.get_age</span></code></a>([format_string,&nbsp;info])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#mytools.get_age" title="mytools.get_age"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.get_age</span></code></a>([format_string,&nbsp;info])</td>
 <td>Get age with specific format_string.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#mytools.random_item" title="mytools.random_item"><code class="xref py py-obj docutils literal"><span class="pre">mytools.random_item</span></code></a>(mylist)</td>
+<tr class="row-even"><td><a class="reference internal" href="#mytools.random_item" title="mytools.random_item"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.random_item</span></code></a>(mylist)</td>
 <td>Get random item of data.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#mytools.file_replace" title="mytools.file_replace"><code class="xref py py-obj docutils literal"><span class="pre">mytools.file_replace</span></code></a>(source_file,&nbsp;...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#mytools.file_replace" title="mytools.file_replace"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.file_replace</span></code></a>(source_file,&nbsp;…)</td>
 <td>File replace.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#mytools.read_excel" title="mytools.read_excel"><code class="xref py py-obj docutils literal"><span class="pre">mytools.read_excel</span></code></a>(filepath)</td>
-<td>Get excel source</td>
+<tr class="row-even"><td><a class="reference internal" href="#mytools.read_excel" title="mytools.read_excel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.read_excel</span></code></a>(filepath)</td>
+<td>Get excel source.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#mytools.set_excel_style" title="mytools.set_excel_style"><code class="xref py py-obj docutils literal"><span class="pre">mytools.set_excel_style</span></code></a>(name,&nbsp;height[,&nbsp;bold])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#mytools.set_excel_style" title="mytools.set_excel_style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.set_excel_style</span></code></a>(name,&nbsp;height[,&nbsp;bold])</td>
 <td>Set excel style.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#mytools.write_excel" title="mytools.write_excel"><code class="xref py py-obj docutils literal"><span class="pre">mytools.write_excel</span></code></a>([filename,&nbsp;sheets])</td>
+<tr class="row-even"><td><a class="reference internal" href="#mytools.write_excel" title="mytools.write_excel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.write_excel</span></code></a>([filename,&nbsp;sheets])</td>
 <td>Write excel from data.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#mytools.write_excel_sql" title="mytools.write_excel_sql"><code class="xref py py-obj docutils literal"><span class="pre">mytools.write_excel_sql</span></code></a>([filename,&nbsp;sheets])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#mytools.write_excel_sql" title="mytools.write_excel_sql"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.write_excel_sql</span></code></a>([filename,&nbsp;sheets])</td>
 <td>Write excel from data.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#mytools.generate_dict" title="mytools.generate_dict"><code class="xref py py-obj docutils literal"><span class="pre">mytools.generate_dict</span></code></a>(dictpath,&nbsp;sourcepath)</td>
+<tr class="row-even"><td><a class="reference internal" href="#mytools.generate_dict" title="mytools.generate_dict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.generate_dict</span></code></a>(dictpath,&nbsp;sourcepath)</td>
 <td>Generate dictionary file from sourcefile.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#mytools.waitting" title="mytools.waitting"><code class="xref py py-obj docutils literal"><span class="pre">mytools.waitting</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="#mytools.waitting" title="mytools.waitting"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mytools.waitting</span></code></a>()</td>
 <td>Print waitting.</td>
 </tr>
 </tbody>
@@ -268,7 +276,7 @@
 <h2>MyEncoder 解决 json.dumps 不能序列化 datetime 类型的问题<a class="headerlink" href="#myencoder-json-dumps-datetime" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="mytools.MyEncoder">
-<code class="descclassname">mytools.</code><code class="descname">MyEncoder</code><span class="sig-paren">(</span><em>skipkeys=False</em>, <em>ensure_ascii=True</em>, <em>check_circular=True</em>, <em>allow_nan=True</em>, <em>sort_keys=False</em>, <em>indent=None</em>, <em>separators=None</em>, <em>default=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mytools.html#MyEncoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mytools.MyEncoder" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">mytools.</code><code class="descname">MyEncoder</code><span class="sig-paren">(</span><em>*</em>, <em>skipkeys=False</em>, <em>ensure_ascii=True</em>, <em>check_circular=True</em>, <em>allow_nan=True</em>, <em>sort_keys=False</em>, <em>indent=None</em>, <em>separators=None</em>, <em>default=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mytools.html#MyEncoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mytools.MyEncoder" title="Permalink to this definition">¶</a></dt>
 <dd><p>解决json.dumps不能序列化datetime类型的问题：使用Python自带的json.dumps方法
 转换数据为json的时候，如果格式化的数据中有datetime类型的数据时会报错。
 TypeError: datetime.datetime(2014, 03, 20, 12, 10, 44) is not JSON serializable
@@ -325,8 +333,8 @@ Usage: json.dumps(data, cls=MyEncoder)</p>
 <code class="descclassname">mytools.</code><code class="descname">Walk</code><span class="sig-paren">(</span><em>db=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mytools.html#Walk"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mytools.Walk" title="Permalink to this definition">¶</a></dt>
 <dd><p>Walk directory to batch processing.
 遍历目录进行批处理。</p>
-<p>Subclasses may override the &#8216;handle_file&#8217; method to provide custom file processing mode.
-子类可以重写&#8217;handle_file&#8217;方法来实现自定义的文件处理方式。</p>
+<p>Subclasses may override the ‘handle_file’ method to provide custom file processing mode.
+子类可以重写’handle_file’方法来实现自定义的文件处理方式。</p>
 <p>Public attributes:
 - filelist: All filenames with full path in directory.
 - fnamelist: All filenames in directory.
@@ -347,7 +355,7 @@ Usage: json.dumps(data, cls=MyEncoder)</p>
 一般系统时间都是要大于CPU时间的。通常可以由系统提供，在C++/Windows中，可以由&lt;time.h&gt;提供。
 注意得到的时间精度是和系统有关系的。
 1.time.clock()以浮点数计算的秒数返回当前的CPU时间。用来衡量不同程序的耗时，比time.time()更有用。
-time.clock()在不同的系统上含义不同。在UNIX系统上，它返回的是&#8221;进程时间&#8221;，它是用秒表示的浮点数（时间戳）。
+time.clock()在不同的系统上含义不同。在UNIX系统上，它返回的是”进程时间”，它是用秒表示的浮点数（时间戳）。
 而在WINDOWS中，第一次调用，返回的是进程运行的实际时间。而第二次之后的调用是自第一次
 调用以后到现在的运行时间。（实际上是以WIN32上QueryPerformanceCounter()为基础，它比毫秒表示更为精确）
 2.time.perf_counter()能够提供给定平台上精度最高的计时器。计算的仍然是系统时间，
@@ -356,9 +364,9 @@ time.clock()在不同的系统上含义不同。在UNIX系统上，它返回的�
 <dl class="docutils">
 <dt>Args:</dt>
 <dd><p class="first">info: Customize print info. 自定义提示信息。
-format_string: Specifies the timing unit. 指定计时单位，例如&#8217;s&#8217;: 秒，&#8217;ms&#8217;: 毫秒。</p>
+format_string: Specifies the timing unit. 指定计时单位，例如’s’: 秒，’ms’: 毫秒。</p>
 <blockquote class="last">
-<div>Defaults to &#8216;s&#8217;.</div></blockquote>
+<div>Defaults to ‘s’.</div></blockquote>
 </dd>
 </dl>
 </dd></dl>
@@ -374,9 +382,9 @@ format_string: Specifies the timing unit. 指定计时单位，例如&#8217;s&#8
 <dt>Args:</dt>
 <dd><dl class="first last docutils">
 <dt>style: Specifies the format of time. 指定日期表示方式。</dt>
-<dd>Defaults to &#8216;%Y-%m-%d %H:%M:%S&#8217;.</dd>
-<dt>pattern: Specifies the timestamp unit. 指定时间戳单位，&#8217;s&#8217;: 秒，&#8217;ms&#8217;: 毫秒。</dt>
-<dd>Defaults to &#8216;s&#8217;.</dd>
+<dd>Defaults to ‘%Y-%m-%d %H:%M:%S’.</dd>
+<dt>pattern: Specifies the timestamp unit. 指定时间戳单位，’s’: 秒，’ms’: 毫秒。</dt>
+<dd>Defaults to ‘s’.</dd>
 </dl>
 </dd>
 </dl>
@@ -385,6 +393,21 @@ format_string: Specifies the timing unit. 指定计时单位，例如&#8217;s&#8
 </div>
 <div class="section" id="id8">
 <h2>获取指定日期表示方式的当前时间<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="chat.mytools.get_current_time">
+<code class="descclassname">chat.mytools.</code><code class="descname">get_current_time</code><span class="sig-paren">(</span><em>format_string='%Y-%m-%d-%H-%M-%S'</em>, <em>info=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/chat/mytools.html#get_current_time"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#chat.mytools.get_current_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get current time with specific format_string.
+获取指定日期表示方式的当前时间。</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt>format_string: Specifies the format of time. 指定日期表示方式。</dt>
+<dd>Defaults to ‘%Y-%m-%d-%H-%M-%S’.</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
 <div class="section" id="id9">
 <h2>获取指定日期表示方式的年龄<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
@@ -397,7 +420,7 @@ format_string: Specifies the timing unit. 指定计时单位，例如&#8217;s&#8
 <dt>Args:</dt>
 <dd><dl class="first last docutils">
 <dt>format_string: Specifies the format of time. 指定日期表示方式。</dt>
-<dd>Defaults to &#8216;{y}年{m}个月{d}天&#8217;.</dd>
+<dd>Defaults to ‘{y}年{m}个月{d}天’.</dd>
 </dl>
 </dd>
 </dl>
@@ -438,12 +461,12 @@ destination_file：The full path of destination file. 目标文件完整路径�
 <dl class="function">
 <dt id="mytools.read_excel">
 <code class="descclassname">mytools.</code><code class="descname">read_excel</code><span class="sig-paren">(</span><em>filepath</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mytools.html#read_excel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mytools.read_excel" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get excel source</p>
+<dd><p>Get excel source.</p>
 <dl class="docutils">
 <dt>Args:</dt>
-<dd>filepath: The full path of excel file. excel文件完整路径。</dd>
+<dd>filepath: The full path of excel file. Excel 文件完整路径。</dd>
 <dt>Returns:</dt>
-<dd>data: Data of excel. excel数据。</dd>
+<dd>data: Data of excel. Excel 数据。</dd>
 </dl>
 </dd></dl>
 
@@ -547,7 +570,7 @@ sourcepath: The full path of source file. 源文件完整路径。</dd>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
 
   
 

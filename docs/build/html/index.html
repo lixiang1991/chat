@@ -30,6 +30,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="chat 1.0.7 documentation" href="#"/>
         <link rel="next" title="安装 Installation" href="user/installation.html"/> 
 
@@ -95,6 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="modules/graph.html">API - 语义数据库管理 Neo4j 版本</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules/sql.html">API - 语义数据库管理 SQL 版本</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules/qa.html">API - 语义理解问答</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/qa_sql.html">API - 语义理解问答 SQL 版本</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules/kmapi.html">API - 语义知识库管理 API 接口</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules/mytools.html">API - 常用工具箱</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules/semantic.html">API - 语义工具箱</a></li>
@@ -140,7 +144,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/index.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -199,7 +203,7 @@ Chat 非常易于修改和扩展，可以方便地个性化定制。如果您有
 <p>我们欢迎您在 <a class="reference external" href="https://github.com/decalogue/chat">Github</a> 上 Star, Fork 以及 Watch <a class="reference external" href="https://github.com/decalogue/chat">官方项目</a> ，这样当官方有更新时，您会立即知道。</p>
 <p>您可以在 <a class="reference external" href="http://chat-cn.readthedocs.io/zh_CN/latest/">Read the docs</a> 中阅读官方中文文档。</p>
 <p class="last">如果您阅读在线中文文档时有什么问题，您可以在 Github 上下载这个项目，
-然后去 <code class="docutils literal"><span class="pre">/docs/build/html/index.html</span></code> 阅读离线中文文档。</p>
+然后去 <code class="docutils literal notranslate"><span class="pre">/docs/build/html/index.html</span></code> 阅读离线中文文档。</p>
 </div>
 </div>
 <div class="section" id="id4">
@@ -278,7 +282,47 @@ Chat 非常易于修改和扩展，可以方便地个性化定制。如果您有
 <li class="toctree-l2"><a class="reference internal" href="modules/qa.html#id1">语义理解机器人</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="modules/kmapi.html">API - 语义知识库管理 API 接口</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/qa_sql.html">API - 语义理解问答 SQL 版本</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/qa_sql.html#id1">语义理解机器人</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/kmapi.html">API - 语义知识库管理 API 接口</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id1">判断文件类型是否允许</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#chatbot">获取 chatbot 名字</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id2">获取可用的知识库列表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id3">获取已启用的知识库列表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id4">获取数据资源引用路径</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id5">登录</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id6">退出</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id7">获取当前知识库名称</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id8">编辑用户信息</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#error-page">场景 error_page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id9">重置用户所有已有知识库</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id10">上传知识库</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id11">上传图片</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id12">下载图片</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id13">下载知识库</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id14">知识库配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id15">添加知识库</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id16">用户删除知识库</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id17">管理员删除知识库</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id18">搜索问答节点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id19">搜索场景节点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id20">获取问答节点列表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id21">添加问答节点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id22">编辑问答节点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id23">删除问答节点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id24">返回当前所选知识库所有场景根节点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id25">获取场景节点列表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id26">添加场景节点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id27">编辑场景节点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id28">删除场景节点及其所有子节点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id29">添加单节点场景</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id30">编辑单节点场景</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id31">删除单节点场景</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/kmapi.html#id32">启动知识库管理服务</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="modules/mytools.html">API - 常用工具箱</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="modules/mytools.html#id1">自定义异常</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/mytools.html#id2">自定义字符串格式异常</a></li>
@@ -432,7 +476,7 @@ Chat 非常易于修改和扩展，可以方便地个性化定制。如果您有
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
 
   
 

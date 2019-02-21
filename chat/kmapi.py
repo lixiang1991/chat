@@ -5,13 +5,16 @@ import os
 import json
 from flask import request, session, send_from_directory
 from werkzeug import secure_filename
-from .app import app, files
-from .graph import Database
+from chat.app import app, files
+from chat.graph import Database
 # from .sql import Database
-from .semantic import get_tag
+from chat.semantic import get_tag
 
-# 初始化知识库
-database = Database(password="train", userid="A0001")
+database=None
+def init_km():
+    """初始化知识库
+    """
+    database = Database(password="train", userid="A0001")
 
 img_formats = {'png', 'jpg', 'jpeg', 'gif', 'xls'}
 

@@ -1,30 +1,30 @@
 API - 语义客户端
-========================
+================================================
 
 .. image:: my_figs/client.png
   :scale: 50 %
 
-.. automodule:: chat.client
+.. automodule:: client
 
 .. autosummary::
 
-   question_pack
-   config_pack
-   match
-   config
+   client.question_pack
+   client.config_pack
+   client.match
+   client.config
 
 封装问题
---------------
-.. autofunction:: question_pack
+----------------------------
+.. autofunction:: client.question_pack
 
 封装配置
---------------
-.. autofunction:: config_pack
+----------------------------
+.. autofunction:: client.config_pack
 
 搜索答案
---------------
-.. autofunction:: match
+----------------------------
+.. autofunction:: client.match
 
 配置语义知识库
-------------------------
-.. autofunction:: config
+--------------------------------------
+.. autofunction:: client.config

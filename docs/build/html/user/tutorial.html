@@ -30,6 +30,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="chat 1.0.7 documentation" href="../index.html"/>
         <link rel="next" title="个性化定制您的聊天机器人" href="custom.html"/>
         <link rel="prev" title="安装 Installation" href="installation.html"/> 
@@ -149,7 +152,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/user/tutorial.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/user/tutorial.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -165,10 +168,10 @@
 <h2>Step 1 在终端中启动数据库<a class="headerlink" href="#step-1" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>方式1：直接使用 chat/tests/nlu.db 这个已经初始化的数据库</li>
-<li>方式2：需自定义数据库，将其密码设为&#8217;train&#8217;</li>
+<li>方式2：需自定义数据库，将其密码设为’train’</li>
 <li>若要修改密码：可在 chat/conf/self.conf 中修改 [neo4j] 选项 password)</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>neo4j start
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>neo4j start
 </pre></div>
 </div>
 </div>
@@ -177,7 +180,7 @@
 <ul class="simple">
 <li>2.1 启动语义服务器并保持（详见 chat/tests/test_server.py，可命令行运行 python test_server.py）</li>
 </ul>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">chat</span> <span class="kn">import</span> <span class="n">server</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">chat</span> <span class="kn">import</span> <span class="n">server</span>
 
 <span class="n">server</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
 </pre></div>
@@ -186,7 +189,7 @@
 <li>2.2 导入测试知识库（若直接使用 chat/tests/nlu.db 进入 Step 3）</li>
 </ul>
 <p>（详见 chat/tests/test_graph.py，可命令行运行 python test_graph.py）</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">chat.graph</span> <span class="kn">import</span> <span class="n">Database</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">chat.graph</span> <span class="kn">import</span> <span class="n">Database</span>
 
 <span class="n">kb</span> <span class="o">=</span> <span class="n">Database</span><span class="p">(</span><span class="n">password</span><span class="o">=</span><span class="s1">&#39;train&#39;</span><span class="p">)</span>
 <span class="n">kb</span><span class="o">.</span><span class="n">reset</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;chat.xls&#39;</span><span class="p">)</span> <span class="c1"># 详见 chat/tests/chat.xls，可自定义问答</span>
@@ -199,7 +202,7 @@
 <li>方式1：启动语义客户端</li>
 </ul>
 <p>（详见 chat/tests/test_client.py，可命令行运行 python test_client.py）</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">chat</span> <span class="kn">import</span> <span class="n">client</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">chat</span> <span class="kn">import</span> <span class="n">client</span>
 
 <span class="n">client</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
 </pre></div>
@@ -207,7 +210,7 @@
 <ul class="simple">
 <li>方式2：使用 chat.qa 子模块</li>
 </ul>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">chat.qa</span> <span class="kn">import</span> <span class="n">Robot</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">chat.qa</span> <span class="kn">import</span> <span class="n">Robot</span>
 <span class="kn">from</span> <span class="nn">chat.config</span> <span class="kn">import</span> <span class="n">getConfig</span>
 
 <span class="n">robot</span> <span class="o">=</span> <span class="n">Robot</span><span class="p">(</span><span class="n">password</span><span class="o">=</span><span class="n">getConfig</span><span class="p">(</span><span class="s2">&quot;neo4j&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">))</span>
@@ -218,7 +221,7 @@
 </div>
 <div class="section" id="config">
 <h3>配置 Config<a class="headerlink" href="#config" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">chat.qa</span> <span class="kn">import</span> <span class="n">Robot</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">chat.qa</span> <span class="kn">import</span> <span class="n">Robot</span>
 <span class="kn">from</span> <span class="nn">chat.config</span> <span class="kn">import</span> <span class="n">getConfig</span>
 
 <span class="n">robot</span> <span class="o">=</span> <span class="n">Robot</span><span class="p">(</span><span class="n">password</span><span class="o">=</span><span class="n">getConfig</span><span class="p">(</span><span class="s2">&quot;neo4j&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">))</span>
@@ -283,7 +286,7 @@
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
 
   
 

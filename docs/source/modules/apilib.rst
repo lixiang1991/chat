@@ -1,10 +1,10 @@
 API - 第三方 API 接口
-========================
+================================================
 
 .. image:: my_figs/apilib.png
   :scale: 50 %
 
-.. automodule:: chat.apilib
+.. automodule:: apilib
 
 .. autosummary::
 

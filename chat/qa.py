@@ -23,7 +23,8 @@ log_do_not_know = getConfig("path", "do_not_know")
 
 def check_dir(file_dir):
     dir= os.path.dirname(file_dir)
-    if os.path.isdir(dir) and  not os.path.exists(dir):
+    if not os.path.exists(dir):
+        check_dir(dir)
         os.mkdir(dir)
 check_dir(log_do_not_know)
 # def get_navigation_location():

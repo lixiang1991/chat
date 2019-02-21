@@ -30,9 +30,13 @@
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
+# 文档生成方法：安装sphinx后，在cmd中，进入docs目录，运行make html
 import sys
-sys.path.append("../chat")
-
+import os
+sys.path.insert(0, os.path.abspath('../../chat'))
+sys.path.insert(0, os.path.abspath('../..'))
+# sys.path.append("../chat")
+print( sys.path)
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.doctest',

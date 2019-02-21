@@ -30,6 +30,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="chat 1.0.7 documentation" href="../index.html"/>
         <link rel="next" title="API - 语义知识库管理 API 接口" href="kmapi.html"/>
         <link rel="prev" title="API - 语义数据库管理 SQL 版本" href="sql.html"/> 
@@ -144,7 +147,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/modules/qa.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/modules/qa.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -156,20 +159,50 @@
             
   <div class="section" id="api">
 <h1>API - 语义理解问答<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
-<a class="reference internal image-reference" href="../_images/qa.ico"><img alt="../_images/qa.ico" src="../_images/qa.ico" style="width: 64.0px; height: 64.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/qa.ico"><img alt="../_images/qa.ico" src="../_images/qa.ico" /></a>
+<span class="target" id="module-chat.qa"></span><p>qa</p>
+<p>QA based on NLU and Dialogue scene.
+基于自然语言理解和对话场景的问答。</p>
+<p>Available functions:
+- All classes and functions: 所有类和函数</p>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">Robot</span></code></td>
-<td></td>
+<tr class="row-odd"><td><a class="reference internal" href="#chat.qa.Robot" title="chat.qa.Robot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Robot</span></code></a>([password,&nbsp;userid])</td>
+<td>NLU Robot.</td>
 </tr>
 </tbody>
 </table>
 <div class="section" id="id1">
 <h2>语义理解机器人<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="chat.qa.Robot">
+<code class="descclassname">chat.qa.</code><code class="descname">Robot</code><span class="sig-paren">(</span><em>password='train'</em>, <em>userid='A0001'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/chat/qa.html#Robot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#chat.qa.Robot" title="Permalink to this definition">¶</a></dt>
+<dd><p>NLU Robot.
+自然语言理解机器人。</p>
+<p>Public attributes:
+- graph: The connection of graph database. 图数据库连接
+- selector: The selector of graph database. 图数据库选择器
+- locations: Navigation Locations. 导航地点列表
+- is_scene: 在线场景标志，默认为 False
+- user: 机器人配置信息
+- usertopics: 可用话题列表
+- address: 在线调用百度地图 IP 定位 API，网络异常时从配置信息获取默认地址
+- topic: 当前QA话题
+- qa_id: 当前QA id
+- qmemory: 短期记忆-最近用户问过的10个问题
+- amemory: 短期记忆-最近回答用户的10个答案
+- pmemory: 短期记忆-最近一次回答用户的正确答案
+- cmd_end_scene: 退出场景命令集
+- cmd_previous_step: 上一步命令集，场景内全局模式
+- cmd_next_step: 下一步命令集，通过界面按钮实现
+- cmd_repeat: 重复命令集
+- do_not_know: 匹配不到时随机回答</p>
+</dd></dl>
+
 </div>
 </div>
 
@@ -223,7 +256,7 @@
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
 
   
 
