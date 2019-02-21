@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>API - 语义理解问答 &mdash; chat 1.0.7 documentation</title>
+  <title>API - 语义理解问答(qa.py) &mdash; chat 1.0.7 documentation</title>
   
 
   
@@ -34,8 +34,8 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="chat 1.0.7 documentation" href="../index.html"/>
-        <link rel="next" title="API - 语义知识库管理 API 接口" href="kmapi.html"/>
-        <link rel="prev" title="API - 语义数据库管理 SQL 版本" href="sql.html"/> 
+        <link rel="next" title="API - 语义理解问答 SQL 版本(qa_sql.py)" href="qa_sql.html"/>
+        <link rel="prev" title="API - 语义数据库管理 SQL 版本(sql.py)" href="sql.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -94,25 +94,26 @@
 <li class="toctree-l1"><a class="reference internal" href="../user/thanks.html">致谢</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="server.html">API - 语义服务器</a></li>
-<li class="toctree-l1"><a class="reference internal" href="client.html">API - 语义客户端</a></li>
-<li class="toctree-l1"><a class="reference internal" href="graph.html">API - 语义数据库管理 Neo4j 版本</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sql.html">API - 语义数据库管理 SQL 版本</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">API - 语义理解问答</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="server.html">API - 语义服务器(server.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="client.html">API - 语义客户端(client.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="graph.html">API - 语义数据库管理 Neo4j 版本(graph.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sql.html">API - 语义数据库管理 SQL 版本(sql.py)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API - 语义理解问答(qa.py)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id1">语义理解机器人</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="kmapi.html">API - 语义知识库管理 API 接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mytools.html">API - 常用工具箱</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semantic.html">API - 语义工具箱</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semantic2.html">API - 语义工具箱2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">API - 语义理解 Restful API 接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="apilib.html">API - 第三方 API 接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="app.html">API - 语义知识库管理 Flask app</a></li>
-<li class="toctree-l1"><a class="reference internal" href="config.html">API - chat 配置</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ianswer.html">API - XML 封装答案</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tts.html">API - 语音合成</a></li>
-<li class="toctree-l1"><a class="reference internal" href="word2pinyin.html">API - 拼音语义算法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qa_sql.html">API - 语义理解问答 SQL 版本(qa_sql.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kmapi.html">API - 语义知识库管理 API 接口(kmapi.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mytools.html">API - 常用工具箱(mytools.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="semantic.html">API - 语义工具箱(semantic.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="semantic2.html">API - 语义工具箱2(semantic2.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API - 语义理解 Restful API 接口(api.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apilib.html">API - 第三方 API 接口(apilib.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="app.html">API - 语义知识库管理 Flask app(app.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">API - chat 配置(config.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ianswer.html">API - XML 封装答案(ianswer.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tts.html">API - 语音合成(tts.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="word2pinyin.html">API - 拼音语义算法(word2pinyin.py)</a></li>
 </ul>
 
             
@@ -143,7 +144,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
       
-    <li>API - 语义理解问答</li>
+    <li>API - 语义理解问答(qa.py)</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -157,9 +158,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="api">
-<h1>API - 语义理解问答<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
-<a class="reference internal image-reference" href="../_images/qa.ico"><img alt="../_images/qa.ico" src="../_images/qa.ico" /></a>
+  <div class="section" id="api-qa-py">
+<h1>API - 语义理解问答(qa.py)<a class="headerlink" href="#api-qa-py" title="Permalink to this headline">¶</a></h1>
+<img alt="../_images/qa.ico" src="../_images/qa.ico" />
 <span class="target" id="module-chat.qa"></span><p>qa</p>
 <p>QA based on NLU and Dialogue scene.
 基于自然语言理解和对话场景的问答。</p>
@@ -178,9 +179,9 @@
 </table>
 <div class="section" id="id1">
 <h2>语义理解机器人<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
+<dl class="class">
 <dt id="chat.qa.Robot">
-<code class="descclassname">chat.qa.</code><code class="descname">Robot</code><span class="sig-paren">(</span><em>password='train'</em>, <em>userid='A0001'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/chat/qa.html#Robot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#chat.qa.Robot" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">chat.qa.</code><code class="descname">Robot</code><span class="sig-paren">(</span><em>password='train'</em>, <em>userid='A0001'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/chat/qa.html#Robot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#chat.qa.Robot" title="Permalink to this definition">¶</a></dt>
 <dd><p>NLU Robot.
 自然语言理解机器人。</p>
 <p>Public attributes:
@@ -201,6 +202,121 @@
 - cmd_next_step: 下一步命令集，通过界面按钮实现
 - cmd_repeat: 重复命令集
 - do_not_know: 匹配不到时随机回答</p>
+<dl class="method">
+<dt id="chat.qa.Robot.add_to_memory">
+<code class="descname">add_to_memory</code><span class="sig-paren">(</span><em>question='question'</em>, <em>userid='A0001'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/chat/qa.html#Robot.add_to_memory"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#chat.qa.Robot.add_to_memory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add user question to memory.
+将用户当前对话加入信息记忆。</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt>question: 用户问题。</dt>
+<dd>Defaults to “question”.</dd>
+<dt>userid: 用户唯一标识。</dt>
+<dd>Defaults to “userid”.</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="chat.qa.Robot.configure">
+<code class="descname">configure</code><span class="sig-paren">(</span><em>info=''</em>, <em>userid='A0001'</em>, <em>key='A0001'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/chat/qa.html#Robot.configure"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#chat.qa.Robot.configure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Configure knowledge base.
+配置知识库。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="chat.qa.Robot.extract_keysentence">
+<code class="descname">extract_keysentence</code><span class="sig-paren">(</span><em>question</em>, <em>data=None</em>, <em>threshold=0.4</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/chat/qa.html#Robot.extract_keysentence"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#chat.qa.Robot.extract_keysentence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract keysentence QA in NLU database。
+QA匹配模式：从知识库选取包含关键句的问答对。</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>question: User question. 用户问题。</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="chat.qa.Robot.extract_keysentence_first">
+<code class="descname">extract_keysentence_first</code><span class="sig-paren">(</span><em>question</em>, <em>data=None</em>, <em>threshold=0.4</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/chat/qa.html#Robot.extract_keysentence_first"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#chat.qa.Robot.extract_keysentence_first" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract keysentence QA in NLU database。
+QA匹配模式：从知识库选取包含关键句且匹配度最高的问答对。</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>question: User question. 用户问题。</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="chat.qa.Robot.extract_pinyin">
+<code class="descname">extract_pinyin</code><span class="sig-paren">(</span><em>question</em>, <em>subgraph</em>, <em>threshold=0.8</em>, <em>athreshold=0.9</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/chat/qa.html#Robot.extract_pinyin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#chat.qa.Robot.extract_pinyin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract synonymous QA in NLU database。
+QA匹配模式：从图形数据库选取匹配度最高的问答对。</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>question: User question. 用户问题。
+subgraph: Sub graphs corresponding to the current dialogue. 当前对话领域对应的子图。</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="chat.qa.Robot.extract_synonym">
+<code class="descname">extract_synonym</code><span class="sig-paren">(</span><em>question</em>, <em>subgraph</em>, <em>threshold=0.6</em>, <em>athreshold=0.92</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/chat/qa.html#Robot.extract_synonym"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#chat.qa.Robot.extract_synonym" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract synonymous QA in NLU database。
+QA匹配模式：从知识库选取第一个超过匹配阈值的问答对。</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>question: User question. 用户问题。
+subgraph: Sub graphs corresponding to the current dialogue. 当前对话领域对应的子图。</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="chat.qa.Robot.extract_synonym_first">
+<code class="descname">extract_synonym_first</code><span class="sig-paren">(</span><em>question</em>, <em>subgraph</em>, <em>threshold=0.6</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/chat/qa.html#Robot.extract_synonym_first"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#chat.qa.Robot.extract_synonym_first" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract synonymous QA in NLU database。
+QA匹配模式：从知识库选取匹配度最高的问答对。</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>question: User question. 用户问题。
+subgraph: Sub graphs corresponding to the current dialogue. 当前对话领域对应的子图。</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="chat.qa.Robot.get_usertopics">
+<code class="descname">get_usertopics</code><span class="sig-paren">(</span><em>userid='A0001'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/chat/qa.html#Robot.get_usertopics"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#chat.qa.Robot.get_usertopics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get available topics list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="chat.qa.Robot.iformat">
+<code class="descname">iformat</code><span class="sig-paren">(</span><em>sentence</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/chat/qa.html#Robot.iformat"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#chat.qa.Robot.iformat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Individualization of robot answer.
+个性化机器人回答。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="chat.qa.Robot.search">
+<code class="descname">search</code><span class="sig-paren">(</span><em>question='question'</em>, <em>tid=''</em>, <em>userid='A0001'</em>, <em>key='A0001'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/chat/qa.html#Robot.search"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#chat.qa.Robot.search" title="Permalink to this definition">¶</a></dt>
+<dd><p>Nlu search. 语义搜索。</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt>question: 用户问题。</dt>
+<dd>Defaults to “question”.</dd>
+<dt>userid: 用户唯一标识。</dt>
+<dd>Defaults to “userid”</dd>
+</dl>
+</dd>
+<dt>Returns:</dt>
+<dd>Dict contains:
+question, answer, topic, tid, url, behavior, parameter, txt, img, button.
+返回包含问题，答案，话题，资源，行为，动作，文本，图片及按钮的字典。</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 </div>
@@ -213,10 +329,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="kmapi.html" class="btn btn-neutral float-right" title="API - 语义知识库管理 API 接口" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="qa_sql.html" class="btn btn-neutral float-right" title="API - 语义理解问答 SQL 版本(qa_sql.py)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="sql.html" class="btn btn-neutral" title="API - 语义数据库管理 SQL 版本" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="sql.html" class="btn btn-neutral" title="API - 语义数据库管理 SQL 版本(sql.py)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -1,8 +1,7 @@
-API - 语义数据库管理 Neo4j 版本
+API - 语义数据库管理 Neo4j 版本(graph.py)
 ================================================
 
 .. image:: my_figs/graph.ico
-  :scale: 50 %
 
 .. automodule:: graph
 
@@ -12,4 +11,5 @@ API - 语义数据库管理 Neo4j 版本
    
 语义数据库管理
 ------------------------------------------------
-.. autofunction:: graph.Database
+.. autoclass:: graph.Database
+   :members:

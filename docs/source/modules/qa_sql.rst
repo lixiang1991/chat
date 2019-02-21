@@ -1,8 +1,7 @@
-API - 语义理解问答 SQL 版本
-========================
+API - 语义理解问答 SQL 版本(qa_sql.py)
+================================================
 
 .. image:: my_figs/qa.ico
-  :scale: 50 %
 
 .. automodule:: chat.qa_sql
 
@@ -11,5 +10,6 @@ API - 语义理解问答 SQL 版本
    Robot
    
 语义理解机器人
-------------------------
-.. autofunction:: Robot
+------------------------------------------------
+.. autoclass:: Robot
+   :members:

@@ -14,8 +14,7 @@ from chat.semantic import get_tag
 
 
 class Database():
-    """Manage Database.
-    管理数据库。
+    """Manage Database.管理数据库。
 
     Public attributes:
     - rdb: Relational database. 关系数据库。

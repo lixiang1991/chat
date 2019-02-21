@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>API - 常用工具箱 &mdash; chat 1.0.7 documentation</title>
+  <title>API - 常用工具箱(mytools.py) &mdash; chat 1.0.7 documentation</title>
   
 
   
@@ -34,8 +34,8 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="chat 1.0.7 documentation" href="../index.html"/>
-        <link rel="next" title="API - 语义工具箱" href="semantic.html"/>
-        <link rel="prev" title="API - 语义知识库管理 API 接口" href="kmapi.html"/> 
+        <link rel="next" title="API - 语义工具箱(semantic.py)" href="semantic.html"/>
+        <link rel="prev" title="API - 语义知识库管理 API 接口(kmapi.py)" href="kmapi.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -94,13 +94,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../user/thanks.html">致谢</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="server.html">API - 语义服务器</a></li>
-<li class="toctree-l1"><a class="reference internal" href="client.html">API - 语义客户端</a></li>
-<li class="toctree-l1"><a class="reference internal" href="graph.html">API - 语义数据库管理 Neo4j 版本</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sql.html">API - 语义数据库管理 SQL 版本</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qa.html">API - 语义理解问答</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kmapi.html">API - 语义知识库管理 API 接口</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">API - 常用工具箱</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="server.html">API - 语义服务器(server.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="client.html">API - 语义客户端(client.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="graph.html">API - 语义数据库管理 Neo4j 版本(graph.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sql.html">API - 语义数据库管理 SQL 版本(sql.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qa.html">API - 语义理解问答(qa.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qa_sql.html">API - 语义理解问答 SQL 版本(qa_sql.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kmapi.html">API - 语义知识库管理 API 接口(kmapi.py)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API - 常用工具箱(mytools.py)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id1">自定义异常</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id2">自定义字符串格式异常</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#myencoder-json-dumps-datetime">MyEncoder 解决 json.dumps 不能序列化 datetime 类型的问题</a></li>
@@ -122,15 +123,15 @@
 <li class="toctree-l2"><a class="reference internal" href="#id15">显示等待中</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="semantic.html">API - 语义工具箱</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semantic2.html">API - 语义工具箱2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">API - 语义理解 Restful API 接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="apilib.html">API - 第三方 API 接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="app.html">API - 语义知识库管理 Flask app</a></li>
-<li class="toctree-l1"><a class="reference internal" href="config.html">API - chat 配置</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ianswer.html">API - XML 封装答案</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tts.html">API - 语音合成</a></li>
-<li class="toctree-l1"><a class="reference internal" href="word2pinyin.html">API - 拼音语义算法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="semantic.html">API - 语义工具箱(semantic.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="semantic2.html">API - 语义工具箱2(semantic2.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API - 语义理解 Restful API 接口(api.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apilib.html">API - 第三方 API 接口(apilib.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="app.html">API - 语义知识库管理 Flask app(app.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">API - chat 配置(config.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ianswer.html">API - XML 封装答案(ianswer.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tts.html">API - 语音合成(tts.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="word2pinyin.html">API - 拼音语义算法(word2pinyin.py)</a></li>
 </ul>
 
             
@@ -161,7 +162,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
       
-    <li>API - 常用工具箱</li>
+    <li>API - 常用工具箱(mytools.py)</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -175,8 +176,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="api">
-<h1>API - 常用工具箱<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="api-mytools-py">
+<h1>API - 常用工具箱(mytools.py)<a class="headerlink" href="#api-mytools-py" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="../_images/mytools.ico"><img alt="../_images/mytools.ico" src="../_images/mytools.ico" /></a>
 <span class="target" id="module-chat.mytools"></span><p>A collection of useful tools. 实用工具集合。</p>
 <p>Including batch processing, performance analysis, data analysis, etc..
@@ -527,10 +528,10 @@ sourcepath: The full path of source file. 源文件完整路径。</dd>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="semantic.html" class="btn btn-neutral float-right" title="API - 语义工具箱" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="semantic.html" class="btn btn-neutral float-right" title="API - 语义工具箱(semantic.py)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="kmapi.html" class="btn btn-neutral" title="API - 语义知识库管理 API 接口" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="kmapi.html" class="btn btn-neutral" title="API - 语义知识库管理 API 接口(kmapi.py)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

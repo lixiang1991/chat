@@ -1,4 +1,4 @@
-API - 语义知识库管理 Flask app
+API - 语义知识库管理 Flask app(app.py)
 ================================================
 
 .. image:: my_figs/app.png

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>API - 语义工具箱 &mdash; chat 1.0.7 documentation</title>
+  <title>API - 语义工具箱(semantic.py) &mdash; chat 1.0.7 documentation</title>
   
 
   
@@ -34,8 +34,8 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="chat 1.0.7 documentation" href="../index.html"/>
-        <link rel="next" title="API - 语义工具箱2" href="semantic2.html"/>
-        <link rel="prev" title="API - 常用工具箱" href="mytools.html"/> 
+        <link rel="next" title="API - 语义工具箱2(semantic2.py)" href="semantic2.html"/>
+        <link rel="prev" title="API - 常用工具箱(mytools.py)" href="mytools.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -94,14 +94,15 @@
 <li class="toctree-l1"><a class="reference internal" href="../user/thanks.html">致谢</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="server.html">API - 语义服务器</a></li>
-<li class="toctree-l1"><a class="reference internal" href="client.html">API - 语义客户端</a></li>
-<li class="toctree-l1"><a class="reference internal" href="graph.html">API - 语义数据库管理 Neo4j 版本</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sql.html">API - 语义数据库管理 SQL 版本</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qa.html">API - 语义理解问答</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kmapi.html">API - 语义知识库管理 API 接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mytools.html">API - 常用工具箱</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">API - 语义工具箱</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="server.html">API - 语义服务器(server.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="client.html">API - 语义客户端(client.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="graph.html">API - 语义数据库管理 Neo4j 版本(graph.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sql.html">API - 语义数据库管理 SQL 版本(sql.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qa.html">API - 语义理解问答(qa.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qa_sql.html">API - 语义理解问答 SQL 版本(qa_sql.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kmapi.html">API - 语义知识库管理 API 接口(kmapi.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mytools.html">API - 常用工具箱(mytools.py)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API - 语义工具箱(semantic.py)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#pkl">通过 pkl 文件加载原生字典对象</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id1">生成敏感词词典</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id2">检测是否包含敏感词</a></li>
@@ -122,14 +123,14 @@
 <li class="toctree-l2"><a class="reference internal" href="#id14">从句子中获取音乐信息</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="semantic2.html">API - 语义工具箱2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">API - 语义理解 Restful API 接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="apilib.html">API - 第三方 API 接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="app.html">API - 语义知识库管理 Flask app</a></li>
-<li class="toctree-l1"><a class="reference internal" href="config.html">API - chat 配置</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ianswer.html">API - XML 封装答案</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tts.html">API - 语音合成</a></li>
-<li class="toctree-l1"><a class="reference internal" href="word2pinyin.html">API - 拼音语义算法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="semantic2.html">API - 语义工具箱2(semantic2.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API - 语义理解 Restful API 接口(api.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apilib.html">API - 第三方 API 接口(apilib.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="app.html">API - 语义知识库管理 Flask app(app.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">API - chat 配置(config.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ianswer.html">API - XML 封装答案(ianswer.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tts.html">API - 语音合成(tts.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="word2pinyin.html">API - 拼音语义算法(word2pinyin.py)</a></li>
 </ul>
 
             
@@ -160,7 +161,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
       
-    <li>API - 语义工具箱</li>
+    <li>API - 语义工具箱(semantic.py)</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -174,9 +175,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="api">
-<h1>API - 语义工具箱<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
-<a class="reference internal image-reference" href="../_images/semantic.ico"><img alt="../_images/semantic.ico" src="../_images/semantic.ico" /></a>
+  <div class="section" id="api-semantic-py">
+<h1>API - 语义工具箱(semantic.py)<a class="headerlink" href="#api-semantic-py" title="Permalink to this headline">¶</a></h1>
+<img alt="../_images/semantic.ico" src="../_images/semantic.ico" />
 <span class="target" id="module-chat.semantic"></span><p>A collection of semantic tools. 语义工具集合。</p>
 <p>Use ‘jieba’ as Chinese word segmentation tool. The ‘set_dictionary’ and
 ‘load_userdict’ must before import ‘jieba.posseg’ and ‘jieba.analyse’.
@@ -479,10 +480,10 @@ The similarity score interval for each two sentences was [0, 1].
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="semantic2.html" class="btn btn-neutral float-right" title="API - 语义工具箱2" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="semantic2.html" class="btn btn-neutral float-right" title="API - 语义工具箱2(semantic2.py)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="mytools.html" class="btn btn-neutral" title="API - 常用工具箱" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="mytools.html" class="btn btn-neutral" title="API - 常用工具箱(mytools.py)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

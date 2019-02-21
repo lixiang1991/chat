@@ -1,4 +1,4 @@
-API - chat 配置
+API - chat 配置(config.py)
 ========================
 
 .. image:: my_figs/config.png

@@ -93,23 +93,23 @@
 <li class="toctree-l1"><a class="reference internal" href="user/thanks.html">致谢</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="modules/server.html">API - 语义服务器</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/client.html">API - 语义客户端</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/graph.html">API - 语义数据库管理 Neo4j 版本</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/sql.html">API - 语义数据库管理 SQL 版本</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/qa.html">API - 语义理解问答</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/qa_sql.html">API - 语义理解问答 SQL 版本</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/kmapi.html">API - 语义知识库管理 API 接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/mytools.html">API - 常用工具箱</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/semantic.html">API - 语义工具箱</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/semantic2.html">API - 语义工具箱2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/api.html">API - 语义理解 Restful API 接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/apilib.html">API - 第三方 API 接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/app.html">API - 语义知识库管理 Flask app</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/config.html">API - chat 配置</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/ianswer.html">API - XML 封装答案</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/tts.html">API - 语音合成</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/word2pinyin.html">API - 拼音语义算法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/server.html">API - 语义服务器(server.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/client.html">API - 语义客户端(client.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/graph.html">API - 语义数据库管理 Neo4j 版本(graph.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/sql.html">API - 语义数据库管理 SQL 版本(sql.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/qa.html">API - 语义理解问答(qa.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/qa_sql.html">API - 语义理解问答 SQL 版本(qa_sql.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/kmapi.html">API - 语义知识库管理 API 接口(kmapi.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/mytools.html">API - 常用工具箱(mytools.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/semantic.html">API - 语义工具箱(semantic.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/semantic2.html">API - 语义工具箱2(semantic2.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/api.html">API - 语义理解 Restful API 接口(api.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/apilib.html">API - 第三方 API 接口(apilib.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/app.html">API - 语义知识库管理 Flask app(app.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/config.html">API - chat 配置(config.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/ianswer.html">API - XML 封装答案(ianswer.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/tts.html">API - 语音合成(tts.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/word2pinyin.html">API - 拼音语义算法(word2pinyin.py)</a></li>
 </ul>
 
             
@@ -163,6 +163,8 @@
  | <a href="#E"><strong>E</strong></a>
  | <a href="#F"><strong>F</strong></a>
  | <a href="#G"><strong>G</strong></a>
+ | <a href="#H"><strong>H</strong></a>
+ | <a href="#I"><strong>I</strong></a>
  | <a href="#J"><strong>J</strong></a>
  | <a href="#K"><strong>K</strong></a>
  | <a href="#L"><strong>L</strong></a>
@@ -180,14 +182,24 @@
 <h2 id="A">A</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/sql.html#chat.sql.Database.add_nlucell">add_nlucell() (chat.sql.Database method)</a>
+
+      <ul>
+        <li><a href="modules/graph.html#graph.Database.add_nlucell">(graph.Database method)</a>
+</li>
+      </ul></li>
+      <li><a href="modules/qa.html#chat.qa.Robot.add_to_memory">add_to_memory() (chat.qa.Robot method)</a>
+</li>
+      <li><a href="modules/graph.html#graph.Database.add_ts">add_ts() (graph.Database method)</a>
+</li>
       <li><a href="modules/kmapi.html#kmapi.allowed_file">allowed_file() (in module kmapi)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="modules/ianswer.html#chat.ianswer.answer2xml">answer2xml() (in module chat.ianswer)</a>
 </li>
       <li><a href="modules/api.html#module-api">api (module)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="modules/api.html#api.api_fun">api_fun() (in module api)</a>
 </li>
       <li><a href="modules/apilib.html#module-apilib">apilib (module)</a>
@@ -238,13 +250,15 @@
 </li>
       <li><a href="modules/tts.html#module-chat.tts">chat.tts (module)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="modules/word2pinyin.html#module-chat.word2pinyin">chat.word2pinyin (module)</a>
 </li>
       <li><a href="modules/semantic.html#semantic.check_swords">check_swords() (in module semantic)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="modules/client.html#module-client">client (module)</a>
+</li>
+      <li><a href="modules/sql.html#chat.sql.Database.close_all">close_all() (chat.sql.Database method)</a>
 </li>
       <li><a href="modules/config.html#module-config">config (module)</a>
 </li>
@@ -260,25 +274,53 @@
 </li>
       <li><a href="modules/client.html#client.config_pack">config_pack() (in module client)</a>
 </li>
+      <li><a href="modules/qa.html#chat.qa.Robot.configure">configure() (chat.qa.Robot method)</a>
+
+      <ul>
+        <li><a href="modules/qa_sql.html#chat.qa_sql.Robot.configure">(chat.qa_sql.Robot method)</a>
+</li>
+      </ul></li>
+      <li><a href="modules/sql.html#chat.sql.Database.create_table">create_table() (chat.sql.Database method)</a>
+</li>
   </ul></td>
 </tr></table>
 
 <h2 id="D">D</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="modules/sql.html#chat.sql.Database">Database() (in module chat.sql)</a>
+      <li><a href="modules/sql.html#chat.sql.Database">Database (class in chat.sql)</a>
 
       <ul>
-        <li><a href="modules/graph.html#graph.Database">(in module graph)</a>
+        <li><a href="modules/graph.html#graph.Database">(class in graph)</a>
 </li>
       </ul></li>
+      <li><a href="modules/sql.html#chat.sql.Database.delete">delete() (chat.sql.Database method)</a>
+
+      <ul>
+        <li><a href="modules/graph.html#graph.Database.delete">(graph.Database method)</a>
+</li>
+      </ul></li>
+      <li><a href="modules/sql.html#chat.sql.Database.delete_nlucell_item">delete_nlucell_item() (chat.sql.Database method)</a>
+</li>
+      <li><a href="modules/sql.html#chat.sql.Database.delete_tabel_data">delete_tabel_data() (chat.sql.Database method)</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="modules/apilib.html#apilib.down_mp3_by_url">down_mp3_by_url() (in module apilib)</a>
 </li>
-      <li><a href="modules/kmapi.html#kmapi.download">download() (in module kmapi)</a>
+      <li><a href="modules/sql.html#chat.sql.Database.download">download() (chat.sql.Database method)</a>
+
+      <ul>
+        <li><a href="modules/graph.html#graph.Database.download">(graph.Database method)</a>
 </li>
+        <li><a href="modules/kmapi.html#kmapi.download">(in module kmapi)</a>
+</li>
+      </ul></li>
       <li><a href="modules/kmapi.html#kmapi.download_img">download_img() (in module kmapi)</a>
+</li>
+      <li><a href="modules/graph.html#graph.Database.download_scene">download_scene() (graph.Database method)</a>
+</li>
+      <li><a href="modules/sql.html#chat.sql.Database.drop_table">drop_table() (chat.sql.Database method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -288,16 +330,58 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="modules/semantic.html#semantic.edit_distance">edit_distance() (in module semantic)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="modules/mytools.html#mytools.Error">Error() (in module mytools)</a>
 </li>
+      <li><a href="modules/qa.html#chat.qa.Robot.extract_keysentence">extract_keysentence() (chat.qa.Robot method)</a>
+
+      <ul>
+        <li><a href="modules/qa_sql.html#chat.qa_sql.Robot.extract_keysentence">(chat.qa_sql.Robot method)</a>
+</li>
+      </ul></li>
+      <li><a href="modules/qa.html#chat.qa.Robot.extract_keysentence_first">extract_keysentence_first() (chat.qa.Robot method)</a>
+
+      <ul>
+        <li><a href="modules/qa_sql.html#chat.qa_sql.Robot.extract_keysentence_first">(chat.qa_sql.Robot method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/qa_sql.html#chat.qa_sql.Robot.extract_navigation">extract_navigation() (chat.qa_sql.Robot method)</a>
+</li>
+      <li><a href="modules/qa.html#chat.qa.Robot.extract_pinyin">extract_pinyin() (chat.qa.Robot method)</a>
+
+      <ul>
+        <li><a href="modules/qa_sql.html#chat.qa_sql.Robot.extract_pinyin">(chat.qa_sql.Robot method)</a>
+</li>
+      </ul></li>
+      <li><a href="modules/qa.html#chat.qa.Robot.extract_synonym">extract_synonym() (chat.qa.Robot method)</a>
+
+      <ul>
+        <li><a href="modules/qa_sql.html#chat.qa_sql.Robot.extract_synonym">(chat.qa_sql.Robot method)</a>
+</li>
+      </ul></li>
+      <li><a href="modules/qa.html#chat.qa.Robot.extract_synonym_first">extract_synonym_first() (chat.qa.Robot method)</a>
+
+      <ul>
+        <li><a href="modules/qa_sql.html#chat.qa_sql.Robot.extract_synonym_first">(chat.qa_sql.Robot method)</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="F">F</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/sql.html#chat.sql.Database.fetch">fetch() (chat.sql.Database method)</a>
+</li>
+      <li><a href="modules/sql.html#chat.sql.Database.fetchall">fetchall() (chat.sql.Database method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/sql.html#chat.sql.Database.fetchone">fetchone() (chat.sql.Database method)</a>
+</li>
+      <li><a href="modules/sql.html#chat.sql.Database.fetchtable">fetchtable() (chat.sql.Database method)</a>
+</li>
       <li><a href="modules/mytools.html#mytools.file_replace">file_replace() (in module mytools)</a>
 </li>
   </ul></td>
@@ -310,13 +394,19 @@
 </li>
       <li><a href="modules/semantic.html#semantic.generate_swords">generate_swords() (in module semantic)</a>
 </li>
+      <li><a href="modules/graph.html#graph.Database.generate_testcases">generate_testcases() (graph.Database method)</a>
+</li>
       <li><a href="modules/mytools.html#mytools.get_age">get_age() (in module mytools)</a>
 </li>
       <li><a href="modules/kmapi.html#kmapi.get_available_kb">get_available_kb() (in module kmapi)</a>
 </li>
+      <li><a href="modules/sql.html#chat.sql.Database.get_conn">get_conn() (chat.sql.Database method)</a>
+</li>
       <li><a href="modules/mytools.html#mytools.get_current_function_name">get_current_function_name() (in module mytools)</a>
 </li>
       <li><a href="modules/mytools.html#chat.mytools.get_current_time">get_current_time() (in module chat.mytools)</a>
+</li>
+      <li><a href="modules/sql.html#chat.sql.Database.get_cursor">get_cursor() (chat.sql.Database method)</a>
 </li>
       <li><a href="modules/mytools.html#mytools.get_host_ip">get_host_ip() (in module mytools)</a>
 </li>
@@ -350,10 +440,46 @@
 </li>
       <li><a href="modules/kmapi.html#kmapi.get_username">get_username() (in module kmapi)</a>
 </li>
+      <li><a href="modules/qa.html#chat.qa.Robot.get_usertopics">get_usertopics() (chat.qa.Robot method)</a>
+
+      <ul>
+        <li><a href="modules/qa_sql.html#chat.qa_sql.Robot.get_usertopics">(chat.qa_sql.Robot method)</a>
+</li>
+      </ul></li>
       <li><a href="modules/config.html#config.getConfig">getConfig() (in module config)</a>
 </li>
       <li><a href="modules/graph.html#module-graph">graph (module)</a>
 </li>
+  </ul></td>
+</tr></table>
+
+<h2 id="H">H</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/sql.html#chat.sql.Database.handle_excel">handle_excel() (chat.sql.Database method)</a>
+
+      <ul>
+        <li><a href="modules/graph.html#graph.Database.handle_excel">(graph.Database method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/graph.html#graph.Database.handle_ts">handle_ts() (graph.Database method)</a>
+</li>
+      <li><a href="modules/graph.html#graph.Database.handle_txt">handle_txt() (graph.Database method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/qa.html#chat.qa.Robot.iformat">iformat() (chat.qa.Robot method)</a>
+
+      <ul>
+        <li><a href="modules/qa_sql.html#chat.qa_sql.Robot.iformat">(chat.qa_sql.Robot method)</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
@@ -412,7 +538,7 @@
 </li>
       <li><a href="modules/mytools.html#mytools.MyEncoder">MyEncoder() (in module mytools)</a>
 </li>
-      <li><a href="modules/server.html#chat.server.MyTCPHandler">MyTCPHandler() (in module chat.server)</a>
+      <li><a href="modules/server.html#chat.server.MyTCPHandler">MyTCPHandler (class in chat.server)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -464,14 +590,22 @@
 </li>
       <li><a href="modules/tts.html#tts.RequestError">RequestError() (in module tts)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="modules/kmapi.html#kmapi.reset">reset() (in module kmapi)</a>
-</li>
-      <li><a href="modules/qa.html#chat.qa.Robot">Robot() (in module chat.qa)</a>
+      <li><a href="modules/sql.html#chat.sql.Database.reset">reset() (chat.sql.Database method)</a>
 
       <ul>
-        <li><a href="modules/qa_sql.html#chat.qa_sql.Robot">(in module chat.qa_sql)</a>
+        <li><a href="modules/graph.html#graph.Database.reset">(graph.Database method)</a>
+</li>
+        <li><a href="modules/kmapi.html#kmapi.reset">(in module kmapi)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/graph.html#graph.Database.reset_ts">reset_ts() (graph.Database method)</a>
+</li>
+      <li><a href="modules/qa.html#chat.qa.Robot">Robot (class in chat.qa)</a>
+
+      <ul>
+        <li><a href="modules/qa_sql.html#chat.qa_sql.Robot">(class in chat.qa_sql)</a>
 </li>
       </ul></li>
       <li><a href="modules/kmapi.html#kmapi.root_data">root_data() (in module kmapi)</a>
@@ -500,14 +634,20 @@
 </li>
       <li><a href="modules/kmapi.html#kmapi.scene_topic">scene_topic() (in module kmapi)</a>
 </li>
+      <li><a href="modules/qa.html#chat.qa.Robot.search">search() (chat.qa.Robot method)</a>
+
+      <ul>
+        <li><a href="modules/qa_sql.html#chat.qa_sql.Robot.search">(chat.qa_sql.Robot method)</a>
+</li>
+      </ul></li>
       <li><a href="modules/kmapi.html#kmapi.search_nlucell">search_nlucell() (in module kmapi)</a>
 </li>
       <li><a href="modules/kmapi.html#kmapi.search_scene">search_scene() (in module kmapi)</a>
 </li>
-      <li><a href="modules/semantic.html#chat.semantic.segment">segment() (in module chat.semantic)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/semantic.html#chat.semantic.segment">segment() (in module chat.semantic)</a>
+</li>
       <li><a href="modules/mytools.html#mytools.set_excel_style">set_excel_style() (in module mytools)</a>
 </li>
       <li><a href="modules/kmapi.html#kmapi.signin">signin() (in module kmapi)</a>
@@ -556,8 +696,16 @@
 <h2 id="U">U</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="modules/kmapi.html#kmapi.upload">upload() (in module kmapi)</a>
+      <li><a href="modules/sql.html#chat.sql.Database.update">update() (chat.sql.Database method)</a>
 </li>
+      <li><a href="modules/sql.html#chat.sql.Database.upload">upload() (chat.sql.Database method)</a>
+
+      <ul>
+        <li><a href="modules/graph.html#graph.Database.upload">(graph.Database method)</a>
+</li>
+        <li><a href="modules/kmapi.html#kmapi.upload">(in module kmapi)</a>
+</li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="modules/kmapi.html#kmapi.upload_img">upload_img() (in module kmapi)</a>
